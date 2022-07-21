@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Generation Airline Booking Form</title>
+
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+
+  <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+
+</head>
+
+<body <div id="booking" class="section">
+  <div class="section-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="booking-cta">
+            <img class="generation-logo" src="images/generation-logo.png" width="300" alt=""><br />
+            <h1>Book your flight with Generation</h1>
+            <p>Flights departing daily for <br />CSS City, Mt. Salesforce and JavaScript Island.</p>
+          </div>
+        </div>
+        <div class="col-md-7 col-md-offset-1">
+          <div class="booking-form">
+            <form id="form" name="form" action="/" onsubmit="return checkInputs()" method="post">
+              <div class="form-group">
+                <div id="form-checkbox1" class="form-checkbox">
+                  <label for="roundtrip">
+                    <input type="radio" id="roundtrip" name="flight-type">
+                    <span></span>Roundtrip
+                  </label>
+                  <label for="one-way">
+                    <input type="radio" id="one-way" name="flight-type">
+                    <span></span>One way
+                  </label><br />
+                  <small></small>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <span class="form-label">Flying from</span>
+                    <input id="flying-from" class="form-control" type="text" placeholder="City or airport">
+                    <small></small>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <span class="form-label">Flying to</span>
+                    <input id="flying-to" class="form-control" type="text" placeholder="City or airport">
+                    <small></small>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <span class="form-label">Departure Date</span>
+                    <input id="dep-date" class="form-control" type="date">
+                    <small></small>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <span class="form-label">Return Date</span>
+                    <input id="ret-date" class="form-control" type="date">
+                    <small></small>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <span class="form-label">Adults (18+)</span>
+                    <select class="form-control">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                    </select>
+                    <span class="select-arrow"></span>
+                    <small></small>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <span class="form-label">Children (0-17)</span>
+                    <select class="form-control">
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                    </select>
+                    <span class="select-arrow"></span>
+                    <small></small>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <span class="form-label">Travel class</span>
+                    <select class="form-control">
+                      <option>Economy</option>
+                      <option>Business</option>
+                      <option>First Class</option>
+                    </select>
+                    <span class="select-arrow"></span>
+                    <small></small>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <span class="form-label">Meals</span>
+                    <select class="form-control">
+                      <option>Any</option>
+                      <option>Vegetarian</option>
+                      <option>Gluten Free</option>
+                    </select>
+                    <span class="select-arrow"></span>
+                    <small></small>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <span class="form-label">First Name</span>
+                    <input id="username1" class="form-control" type="text" placeholder="Passenger 1">
+                    <small></small>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <span class="form-label">Last Name</span>
+                    <input id="username2" class="form-control" type="text" placeholder="Passenger 1">
+                    <small></small>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="birthday">DOB:</label>
+                    <input type="date" id="birthday" name="birthday">
+                    <small></small><br />
+										<div id='pass1-gender'>
+                    <input type="radio" id="pass1radio1" name="pass1gender1" value="pass1-gender">
+                    <label for="pass1-gender">Male&ensp;</label>
+                    <input type="radio" id="pass1radio2" name="pass1gender2" value="pass1-gender">
+                    <label for="pass1-gender">Female</label><br />
+                    <small></small>
+										</div>
+									</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <span class="form-label">First Name</span>
+                    <input id="username3" class="form-control" type="text" placeholder="Passenger 2">
+                    <small></small>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <span class="form-label">Last Name</span>
+                    <input id="username4" class="form-control" type="text" placeholder="Passenger 2">
+                    <small></small>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="birthday">DOB:</label>
+                    <input type="date" id="birthday" name="birthday">
+                    <small></small><br />
+										<div id="pass2-gender">
+                    <input type="radio" id="pass2radio1" name="pass2radio1" value="pass2-gender">
+                    <label for="pass2-gender">Male&ensp;</label>
+                    <input type="radio" id="pass2radio2" name="pass2radio2" value="pass2-gender">
+                    <label for="pass2-gender">Female</label><br />
+                    <small></small>
+										</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <span class="form-label">Phone</span>
+                    <input id="phone" class="form-control" type="tel" placeholder="Phone Number">
+                    <small></small>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <span class="form-label">Email</span>
+                    <input id="email" class="form-control" type="email" placeholder="Email Address">
+                    <small></small>
+                  </div>
+                </div>
+              </div>
+              <div class="form-btn">
+                <button class="submit-btn" type="submit">Book Now</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

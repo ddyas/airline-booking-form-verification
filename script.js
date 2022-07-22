@@ -106,13 +106,13 @@ function checkInputs() {
 	}
 
   if(pass2Radio1.checked == false && pass2Radio2.checked == false) {
-		setErrorFor(pass2Gender, 'Must select gender');
+		setErrorFor(pass2Gender, 'Select gender');
 	} else {
 		setSuccessFor(pass2Gender);
 	}
 
   if(pass1Radio1.checked == false && pass1Radio2.checked == false) {
-		setErrorFor(pass1Gender, 'Must select gender');
+		setErrorFor(pass1Gender, 'Select gender');
 	} else {
 		setSuccessFor(pass1Gender);
 	}
